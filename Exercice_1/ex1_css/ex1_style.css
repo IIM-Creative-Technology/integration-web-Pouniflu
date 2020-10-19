@@ -40,14 +40,14 @@ main {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 400px;
-  height: 350px;
+  height: 360px;
   margin: 10px 10px;
 }
 
 .section-fix button {
   background-color: #FF817C;
   border-style: none;
-  padding: 3px 20px;
+  padding: 8px 20px;
   color: #FFFFFF;
   position: relative;
   bottom: 18px;
