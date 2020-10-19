@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap');
+
+// Couleurs
+$orange: #F57B3A;
+$lightgrey: #E6EEF0;
+$grey: #BABABA;
+
+@mixin font($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 284px;
+}
+
+h2 {
+    @include font(28px, $orange);
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    @include font(12px, $orange);
+    font-family: 'Lato', sans-serif;
+    padding-top: 30px;
+}
+
+h2, h3 {
+    margin: -10px 20px;
+}
+
+p {
+    @include font(18px, black);
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 20px 150px;
+}
+
+p:last-child {
+    margin-bottom: 30px;
+}

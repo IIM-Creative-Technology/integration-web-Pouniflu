@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 284px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #F57B3A;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 12px;
+  color: #F57B3A;
+  font-family: 'Lato', sans-serif;
+  padding-top: 30px;
+}
+
+h2, h3 {
+  margin: -10px 20px;
+}
+
+p {
+  font-size: 18px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 20px 150px;
+}
+
+p:last-child {
+  margin-bottom: 30px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+button:hover {
+  background-color: white;
+  border: none;
+  color: #F57B3A;
+}
+
+article {
+  width: calc((100% - 60px) / 4);
+  background-color: #E6EEF0;
+  border-bottom: 5px solid #F57B3A;
+  margin: 20px 0;
+}
+
+button {
+  font-size: 12px;
+  color: #BABABA;
+  background-color: #E6EEF0;
+  font-family: 'Lato', sans-serif;
+  border-style: none;
+  border: 1px solid #BABABA;
+  padding: 7px 10px;
+  margin: 27px 0px;
+  position: relative;
+  left: 160px;
+}
+/*# sourceMappingURL=ex2_style.css.map */

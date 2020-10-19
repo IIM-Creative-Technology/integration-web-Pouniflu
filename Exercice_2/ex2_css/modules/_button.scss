@@ -1,0 +1,16 @@
+button {
+
+    @include font(12px, $grey);
+
+    background-color: $lightgrey;
+    font-family: 'Lato', sans-serif;
+
+    border-style: none;
+    border: 1px solid $grey;
+    
+    padding: 7px 10px;
+    margin: 27px 0px;
+    position: relative;
+    left: 160px;
+
+}
