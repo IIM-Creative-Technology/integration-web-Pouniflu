@@ -1,0 +1,38 @@
+// Couleurs
+$white: #ffffff;
+$lightgrey: #eeeeee;
+$grey: #757575;
+$blue: #263238;
+$red: #e53935;
+
+@mixin font($color) {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    width: 35vw;
+    font-size: 3em;
+    color: $blue;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    margin-bottom: 30px;
+}
