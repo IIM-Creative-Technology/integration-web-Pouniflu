@@ -1,0 +1,8 @@
+// Couleurs
+@mixin background($one, $two) {
+    background-image: linear-gradient(to top, $one, #fd3f81, $two);
+}
+
+$red:  #fd3e4f;
+$pink: #fd3fb3;
+
