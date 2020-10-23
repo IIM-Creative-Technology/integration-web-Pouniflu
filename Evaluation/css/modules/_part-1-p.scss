@@ -1,0 +1,6 @@
+.part-1-p {
+    width: 790px;
+    text-align: center;
+
+    @include police($black, 18px, 500);
+}

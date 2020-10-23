@@ -1,0 +1,21 @@
+.header-title {
+    width: 490px;
+    margin-left: 236px;
+    margin-top: 254px;
+
+    // Titre principal : "Vos paris entre amis ..."
+    h1 {
+        padding-bottom : 34px;
+        line-height: 60px;
+    }
+
+    // Sous-titre
+    p {
+        @include police(white, 16px, 400);
+        margin-bottom: 48px;
+    }
+
+    .button-pink {
+        font-size: 19.5px;
+    }
+}

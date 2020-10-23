@@ -1,0 +1,32 @@
+.paris-list {
+  width: fit-content;
+
+  ol {
+    max-width: 540px;
+    counter-reset: number-list;
+    list-style: none;
+    padding-left: 100px;
+  }
+
+  ol li {
+    @include police(white, 16px, 500);
+    margin: 0 0 24px 0;
+    counter-increment: number-list;
+    position: relative;
+  }
+
+  ol li::before {
+    content: counter(number-list);
+    @include police($darkviolet, 30px, 700);
+    position: absolute;
+    --size: 55px;
+    left: calc(-1 * var(--size) - 28px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+  }
+}

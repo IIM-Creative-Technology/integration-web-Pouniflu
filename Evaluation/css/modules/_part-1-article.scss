@@ -1,0 +1,23 @@
+.part-1-article {
+    width: 520px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+
+    img {
+        margin: auto 31px auto 0;
+    }
+
+    h3 {
+        @include police($black, 21px, 600);
+
+        &::after{
+            content: " .";
+            @include police($pink, 60px, 600);
+        }
+    }
+
+    p {
+        @include police($black, 16px, 500);
+    }
+}

@@ -1,0 +1,182 @@
+// HEADER
+header, .background-image {
+    min-height: 100vh;
+}
+
+header {
+    @include background(to left);
+}
+
+.background-image {
+    background-image: url(../img/header.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-left: 148px;
+
+    img {
+        width: 230.7px;
+        height: 27.6px;
+    }
+
+    a {
+        @include police(white, 18px, 500);
+        text-decoration: none;
+        margin-right: 24px;
+        padding : 0px 12px 5.3px;
+    }
+
+    a:first-child {
+        border-bottom: 3px solid white;
+    }
+
+    a:last-of-type {
+        margin-right: 132px;
+    }
+}
+
+.down-arrow {
+    position: absolute;
+    top: 92vh;
+}
+
+// SECTION 1 : "Un pari, un gage et c'est parti !"
+.part-1-explications {
+    min-height: 107vh;
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .part-1-p {
+        margin-top: 59px;
+    }
+
+    .part-1-articles {
+        width: 60vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .button-pink {
+        margin-top: 20px;
+    }
+
+}
+
+// SECTION 2 : "Découvrez les paris à venir !"
+.part-2-incoming {
+    min-height: 550px;
+    margin: 0 112px;
+}
+
+// SECTION 3 : "Envie de créer des paris personnalisés ?"
+.part-3-paris, .part-3-paris div {
+    min-height: 823px;
+}
+
+.part-3-paris {
+    @include background(to bottom);
+
+    h2 {
+        color: white;
+    }
+
+    hr {
+        background-color: white;
+    }
+
+    h2, hr {
+        margin: 0 auto;
+    }
+
+    div {
+        background-image: url(../img/paris-personnalises.png);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .button-pink {
+            margin-top: 110px;
+        }
+    }
+}
+
+.paris-section {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.paris-txt {
+    margin-right: 148px;
+}
+
+.paris-list {
+    padding-top: 50px;
+}
+
+// SECTION 4 : Témoignages
+.part-4-temoignage {
+    display: flex;
+    justify-content: center;
+
+    img, .part-4-bg {
+        width: 50%;
+    }
+}
+
+.part-4-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 111px 0 104px;
+}
+
+// FOOTER
+footer {
+    height: 490px;
+    background-image: url(../img/background-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 67.1px 112px 23px;
+
+    hr {
+        height: 1px;
+        width: 100%;
+        background-color: white;
+    }
+
+    h4 {
+        margin-top: 22px;
+    }
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-social-network {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}

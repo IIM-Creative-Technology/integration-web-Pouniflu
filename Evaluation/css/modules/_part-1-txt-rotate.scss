@@ -1,0 +1,8 @@
+.txt-rotate {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -88.8px;
+    top: 158vh;
+
+    @include police($grey, 8.5px, 400);
+}
