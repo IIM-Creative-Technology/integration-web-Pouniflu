@@ -1,8 +1,39 @@
 // Couleurs
 @mixin background($one, $two) {
-    background-image: linear-gradient(to top, $one, #fd3f81, $two);
+    background-image: linear-gradient(50deg, $one, #fd3f81, $two);
 }
 
 $red:  #fd3e4f;
 $pink: #fd3fb3;
+$poppins: 'Poppins', sans-serif;
+$playfair: 'Playfair Display', serif;
 
+@mixin column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin police($a, $b, $c) {
+    font-family: $a;
+    font-size: $b;
+    color: $c;
+}
+
+h1 {
+   font-family: $poppins;
+   font-size: 50px;
+   font-weight: bold;
+   color: white;
+   text-align: center;
+   letter-spacing: -2px;
+   line-height: 1.2;
+   display: block;
+}
+
+a {
+    font-family: $poppins;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    background-image: url(../img/overlay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bandeauRose {
+    padding-left: 135px;
+    height: 491px;
+    @include background($pink, $red);
+}

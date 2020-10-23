@@ -1,0 +1,22 @@
+header section {
+
+    @include column;
+
+    span {
+        margin-top: 150px;
+        margin-bottom: 40px;
+        @include police($poppins, 25px, white);
+    }
+
+    a {
+        width: 185px;
+        height: 57px;
+        font-size: 13px;
+        padding: 16px 47px 23px;
+        margin-top: 106px;
+        margin-bottom: 152px;
+        text-align: center;
+        @include background($pink, $red);
+    }
+
+}

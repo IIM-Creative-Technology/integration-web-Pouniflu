@@ -1,1 +1,133 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: -2px;
+  line-height: 1.2;
+  display: block;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  background-image: url(../img/overlay.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bandeauRose {
+  padding-left: 135px;
+  height: 491px;
+  background-image: linear-gradient(50deg, #fd3fb3, #fd3f81, #fd3e4f);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  padding: 36px 136px 0 33px;
+}
+
+nav div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 539px;
+}
+
+nav div:last-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 81px;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section span {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+header section a {
+  width: 185px;
+  height: 57px;
+  font-size: 13px;
+  padding: 16px 47px 23px;
+  margin-top: 106px;
+  margin-bottom: 152px;
+  text-align: center;
+  background-image: linear-gradient(50deg, #fd3fb3, #fd3f81, #fd3e4f);
+}
+
+.bandeauRose h2 {
+  padding-bottom: 72px;
+  padding-top: 80px;
+  line-height: 1.88;
+  letter-spacing: -2.4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.bandeauRose p {
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.bandeauRose a {
+  width: 200px;
+  padding: 18px 35px 22px;
+  border: solid 2px white;
+  border-radius: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.bandeauRose i {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

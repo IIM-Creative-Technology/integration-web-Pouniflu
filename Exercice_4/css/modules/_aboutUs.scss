@@ -1,0 +1,25 @@
+.bandeauRose {
+    h2 {
+        padding-bottom: 72px;
+        padding-top: 80px;
+        line-height: 1.88;
+        letter-spacing: -2.4px;
+        @include police($poppins, 40px, white);
+    }
+
+    p {
+        @include police($poppins, 35px, white);
+    }
+
+    a {
+        width: 200px;
+        padding: 18px 35px 22px;
+        border: solid 2px white;
+        border-radius: 40px;
+        @include police($poppins, 20px, white);
+    }
+
+    i {
+        padding-left: 20px;
+    }
+}
