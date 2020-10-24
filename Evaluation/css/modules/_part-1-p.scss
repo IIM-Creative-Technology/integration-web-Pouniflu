@@ -6,7 +6,15 @@
 }
 
 // Responsive
-@media (max-width: 900px) {
+// Tablette
+@media (min-width: 601px) and (max-width: 900px) {
+    .part-1-p {
+        width: 90vw;
+    }
+}
+
+// Téléphone
+@media (max-width: 600px) {
     .part-1-p {
         width: 100vw;
     }
