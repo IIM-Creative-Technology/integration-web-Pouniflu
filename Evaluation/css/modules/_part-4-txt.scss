@@ -3,20 +3,21 @@
         @include police($black, 24px, 500);
 
         &::first-letter {
-            white-space: nowrap;
-            overflow: hidden;
-            font-size: 100px;
+            font-size: 72px;
             float: left;
+            line-height: 60px;
         }
     }
 
     p {
         @include police($black, 24px, 500);
+        line-height: 30px;
     }
 
     p:last-of-type {
         margin-top: 24px;
         @include police($grey, 14px, 400);
         font-style: italic;
+        line-height: 20px;
     }
 }
