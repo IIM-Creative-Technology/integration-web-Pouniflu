@@ -14,3 +14,15 @@
         margin-right: 59px;
     }
 }
+
+// Responsive
+@media (max-width: 900px) {
+    .footer-nav {
+        height: auto;
+        width: fit-content;
+        
+        a {
+            margin-right: 0;
+        }
+    }
+}

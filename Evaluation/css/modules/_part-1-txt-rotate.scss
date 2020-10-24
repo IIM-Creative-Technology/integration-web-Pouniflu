@@ -6,3 +6,10 @@
 
     @include police($grey, 8.5px, 400);
 }
+
+// Responsive
+@media (max-width: 900px) {
+    .txt-rotate{
+       display: none;
+    }
+}

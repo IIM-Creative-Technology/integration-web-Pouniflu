@@ -41,6 +41,13 @@ hr {
   background-color: #bf3676;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
 header, .background-image {
   min-height: 100vh;
 }
@@ -95,6 +102,53 @@ nav a:last-of-type {
   top: 92vh;
 }
 
+@media (max-width: 900px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: unset;
+    margin: 0 auto;
+  }
+  nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav a {
+    padding-top: 10px;
+  }
+  nav a:first-of-type {
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  nav a:last-of-type {
+    margin-right: 0;
+    padding-bottom: 10px;
+  }
+  .background-image {
+    background-image: none;
+  }
+  .down-arrow {
+    position: initial;
+    top: unset;
+  }
+}
+
 .part-1-explications {
   min-height: 107vh;
   background-image: url(../img/background.png);
@@ -113,11 +167,15 @@ nav a:last-of-type {
           align-items: center;
 }
 
-.part-1-explications .part-1-p {
+.part-1-explications .button-pink {
+  margin-top: 20px;
+}
+
+.part-1-p {
   margin-top: 59px;
 }
 
-.part-1-explications .part-1-articles {
+.part-1-articles {
   width: 60vw;
   height: 60vh;
   display: -webkit-box;
@@ -134,13 +192,30 @@ nav a:last-of-type {
           align-items: center;
 }
 
-.part-1-explications .button-pink {
-  margin-top: 20px;
+@media (max-width: 900px) {
+  .part-1-explications h2 {
+    text-align: center;
+  }
+  .part-1-explications .button-pink {
+    margin-top: 50px;
+  }
+  .part-1-articles {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 90%;
+  }
 }
 
 .part-2-incoming {
   min-height: 550px;
   margin: 0 112px;
+}
+
+@media (max-width: 900px) {
+  .part-2-incoming {
+    margin: 0 10px;
+  }
 }
 
 .part-3-paris, .part-3-paris div {
@@ -202,6 +277,26 @@ nav a:last-of-type {
   padding-top: 50px;
 }
 
+@media (max-width: 900px) {
+  .part-3-paris div {
+    margin: 0 20px;
+  }
+  .part-3-paris div h2 {
+    text-align: center;
+  }
+  .part-3-paris div .button-pink {
+    margin: 40px 0 60px 0;
+    text-align: center;
+  }
+  .paris-section {
+    display: block;
+    margin-top: 50px;
+  }
+  .paris-section .paris-txt {
+    margin: unset;
+  }
+}
+
 .part-4-temoignage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,6 +322,18 @@ nav a:last-of-type {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 111px 0 104px;
+}
+
+@media (max-width: 900px) {
+  .part-4-temoignage {
+    display: block;
+  }
+  .part-4-temoignage img, .part-4-temoignage .part-4-bg {
+    width: 100%;
+  }
+  .part-4-bg {
+    padding: 40px 10%;
+  }
 }
 
 footer {
@@ -267,6 +374,23 @@ footer section {
   margin-bottom: 30px;
 }
 
+@media (max-width: 900px) {
+  footer {
+    height: auto;
+  }
+  footer section {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  * {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
 .header-title {
   width: 490px;
   margin-left: 236px;
@@ -286,8 +410,27 @@ footer section {
   margin-bottom: 48px;
 }
 
-.header-title .button-pink {
-  font-size: 19.5px;
+@media (max-width: 900px) {
+  .header-title {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 60px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-title p {
+    text-align: center;
+    margin: 0 3% 40px;
+  }
 }
 
 .button-pink {
@@ -304,6 +447,12 @@ footer section {
   margin: 0 50%;
 }
 
+@media (max-width: 900px) {
+  .down-arrow {
+    margin: 0 45%;
+  }
+}
+
 .part-1-p {
   width: 790px;
   text-align: center;
@@ -311,6 +460,12 @@ footer section {
   font-size: 18px;
   font-weight: 500;
   color: #222222;
+}
+
+@media (max-width: 900px) {
+  .part-1-p {
+    width: 100vw;
+  }
 }
 
 .part-1-article {
@@ -350,6 +505,19 @@ footer section {
   color: #222222;
 }
 
+@media (max-width: 900px) {
+  .part-1-article {
+    width: 100%;
+  }
+  .part-1-article div {
+    width: 100%;
+  }
+  .part-1-article h3 {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .txt-rotate {
   position: absolute;
   -webkit-transform: rotate(90deg);
@@ -360,6 +528,12 @@ footer section {
   font-size: 8.5px;
   font-weight: 400;
   color: #929292;
+}
+
+@media (max-width: 900px) {
+  .txt-rotate {
+    display: none;
+  }
 }
 
 .paris-txt {
@@ -386,6 +560,14 @@ footer section {
   font-size: 12px;
   font-weight: 300;
   color: white;
+}
+
+@media (max-width: 900px) {
+  .paris-txt {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .paris-list {
@@ -437,10 +619,9 @@ footer section {
 }
 
 .part-4-bg p:first-of-type::first-letter {
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 100px;
+  font-size: 72px;
   float: left;
+  line-height: 60px;
 }
 
 .part-4-bg p {
@@ -448,6 +629,7 @@ footer section {
   font-size: 24px;
   font-weight: 500;
   color: #222222;
+  line-height: 30px;
 }
 
 .part-4-bg p:last-of-type {
@@ -457,6 +639,7 @@ footer section {
   font-weight: 400;
   color: #929292;
   font-style: italic;
+  line-height: 20px;
 }
 
 .footer-nav {
@@ -482,6 +665,18 @@ footer section {
   text-decoration: none;
   margin-bottom: 30px;
   margin-right: 59px;
+}
+
+@media (max-width: 900px) {
+  .footer-nav {
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer-nav a {
+    margin-right: 0;
+  }
 }
 
 .footer-social-network img {

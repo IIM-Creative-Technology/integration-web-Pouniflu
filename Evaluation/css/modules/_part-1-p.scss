@@ -4,3 +4,10 @@
 
     @include police($black, 18px, 500);
 }
+
+// Responsive
+@media (max-width: 900px) {
+    .part-1-p {
+        width: 100vw;
+    }
+}

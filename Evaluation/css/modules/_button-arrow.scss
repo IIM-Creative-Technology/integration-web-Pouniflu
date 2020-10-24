@@ -1,3 +1,9 @@
 .down-arrow {
     margin: 0 50%;
 }
+
+@media (max-width: 900px) {
+    .down-arrow {
+        margin: 0 45%;
+    }
+}

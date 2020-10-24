@@ -21,3 +21,19 @@
         @include police($black, 16px, 500);
     }
 }
+
+// Responsive
+@media (max-width: 900px) {
+    .part-1-article {
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+
+        h3 {
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -45,6 +45,49 @@ nav {
     top: 92vh;
 }
 
+// Responsive
+@media (max-width: 900px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: unset;
+        margin: 0 auto;
+    }
+
+    nav {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        a {
+            padding-top: 10px;
+        }
+
+        a:first-of-type {
+            padding-top: 10px;
+            padding-bottom: 2px;
+        }
+
+        a:last-of-type {
+            margin-right: 0;
+            padding-bottom: 10px;
+        }
+    }
+
+    .background-image {
+        background-image: none;
+    }
+
+    .down-arrow {
+        position: initial;
+        top: unset;
+    }
+}
+
 // SECTION 1 : "Un pari, un gage et c'est parti !"
 .part-1-explications {
     min-height: 107vh;
@@ -57,29 +100,52 @@ nav {
     flex-direction: column;
     align-items: center;
 
-    .part-1-p {
-        margin-top: 59px;
-    }
-
-    .part-1-articles {
-        width: 60vw;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
     .button-pink {
         margin-top: 20px;
     }
+}
+.part-1-p {
+    margin-top: 59px;
+}
 
+.part-1-articles {
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+// Responsive
+@media (max-width: 900px) {
+    .part-1-explications {
+        h2 {
+            text-align: center;
+        }
+
+        .button-pink {
+            margin-top: 50px;
+        }
+    }
+
+    .part-1-articles {
+        height: fit-content;
+        width: 90%;
+    }
 }
 
 // SECTION 2 : "Découvrez les paris à venir !"
 .part-2-incoming {
     min-height: 550px;
     margin: 0 112px;
+}
+
+// Responsive
+@media (max-width: 900px) {
+    .part-2-incoming {
+        margin: 0 10px;
+    }
 }
 
 // SECTION 3 : "Envie de créer des paris personnalisés ?"
@@ -131,6 +197,31 @@ nav {
     padding-top: 50px;
 }
 
+// Responsive
+@media (max-width: 900px) {
+    .part-3-paris div {
+        margin: 0 20px;
+
+        h2 {
+            text-align: center;
+        }
+
+        .button-pink {
+            margin: 40px 0 60px 0;
+            text-align: center;
+        }
+    }
+
+    .paris-section {
+        display: block;
+        margin-top: 50px;
+
+        .paris-txt {
+            margin: unset;
+        }
+    }
+}
+
 // SECTION 4 : Témoignages
 .part-4-temoignage {
     display: flex;
@@ -147,6 +238,21 @@ nav {
     justify-content: center;
 
     padding: 0 111px 0 104px;
+}
+
+// Responsive
+@media (max-width: 900px) {
+    .part-4-temoignage {
+        display: block;
+
+        img, .part-4-bg {
+            width: 100%;
+        }
+    }
+
+    .part-4-bg {
+        padding: 40px 10%;
+    }
 }
 
 // FOOTER
@@ -167,16 +273,34 @@ footer {
     h4 {
         margin-top: 22px;
     }
-}
 
-footer section {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .footer-social-network {
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px;
+}
+
+// Responsive
+@media (max-width: 900px) {
+    footer {
+        height: auto;
+
+        section {
+            display: block;
+        }
+    }
+}
+
+// RESPONSIVE
+@media (max-width: 900px) {
+    * {
+        width: fit-content;
+    }
 }

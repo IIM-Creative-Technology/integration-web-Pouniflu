@@ -14,3 +14,10 @@
         @include police(white, 12px, 300);
     }
 }
+
+// Responsive
+@media (max-width: 900px) {
+    .paris-txt {
+        width: fit-content;
+    }
+}
