@@ -6,6 +6,15 @@
         @include police(white, 21px, 600);
     }
 
+    h3::after {
+        content: "Nouveau !";
+        margin-left: 56px;
+        padding: 2px 18px;
+        background-color: white;
+        @include police($darkviolet, 16.5px, 600);
+        border-radius: 30px;
+    }
+
     p {
         @include police(white, 16px, 500);
     }

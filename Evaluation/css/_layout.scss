@@ -1,5 +1,5 @@
 // HEADER
-header, .background-image {
+header, header > section {
     min-height: 100vh;
 }
 
@@ -7,7 +7,7 @@ header {
     @include background(to left);
 }
 
-.background-image {
+header > section {
     background-image: url(../img/header.png);
     background-position: right;
     background-repeat: no-repeat;
@@ -61,11 +61,12 @@ nav {
         margin-top: 20px;
     }
 }
-.part-1-p {
+
+.part-1-explications > p {
     margin-top: 59px;
 }
 
-.part-1-articles {
+.part-1-explications > section {
     width: 60vw;
     height: 60vh;
     display: flex;
@@ -115,27 +116,20 @@ nav {
     }
 }
 
-.paris-section {
+.part-3-paris div section {
     margin-top: 75px;
     display: flex;
     justify-content: center;
 }
 
-.paris-txt {
+.part-3-paris div section article {
+    &:first-of-type {
     margin-right: 148px;
-
-    h3::after {
-        content: "Nouveau !";
-        margin-left: 56px;
-        padding: 2px 18px;
-        background-color: white;
-        @include police($darkviolet, 16.5px, 600);
-        border-radius: 30px;
     }
-}
 
-.paris-list {
+    &:last-of-type {
     padding-top: 50px;
+    }
 }
 
 // SECTION 4 : Témoignages
@@ -148,11 +142,10 @@ nav {
     }
 }
 
-.part-4-bg {
+.part-4-temoignage div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 0 111px 0 104px;
 }
 
@@ -182,7 +175,7 @@ footer {
     }
 }
 
-.footer-social-network {
+footer div:last-of-type {
     display: flex;
     align-items: flex-end;
     margin-bottom: 30px;
@@ -219,7 +212,7 @@ footer {
         }
     }
 
-    .background-image {
+    header > section {
         background-image: none; // L'image de fond de la page d'accueil cache le texte en responsive état donné qu'il est blanc, c'est pourquoi elle n'est pas présente.
     }
 
@@ -238,7 +231,7 @@ footer {
         }
     }
 
-    .part-1-articles {
+    .part-1-explications > section {
         height: fit-content;
         width: 80%;
     }
@@ -262,15 +255,15 @@ footer {
         }
     }
 
-    .paris-section {
+    .part-3-paris div section {
         display: block;
         margin-top: 50px;
 
-        .paris-txt {
+        article:first-of-type {
             margin: unset;
         }
 
-        .paris-list {
+        article:last-of-type {
             margin: 0 auto;
         }
     }
@@ -281,11 +274,12 @@ footer {
 
         img, .part-4-bg {
             width: 100%;
+            display: block;
         }
-    }
 
-    .part-4-bg {
-        padding: 40px 10%;
+        div {
+            padding: 60px 10%;
+        }
     }
 
     // Footer
@@ -326,7 +320,7 @@ footer {
     }
 
     // Section 1
-    .part-1-articles {
+    .part-1-explications > section {
         height: fit-content;
         width: 90%;
     }
@@ -341,11 +335,11 @@ footer {
         margin: 0 20px;
     }
 
-    .paris-section {
+    .part-3-paris div section {
         display: block;
         margin-top: 50px;
 
-        .paris-txt {
+        article:first-of-type {
             margin: unset;
         }
     }

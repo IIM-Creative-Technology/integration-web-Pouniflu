@@ -54,7 +54,7 @@ hr {
   }
 }
 
-header, .background-image {
+header, header > section {
   min-height: 100vh;
 }
 
@@ -63,7 +63,7 @@ header {
   background-image: linear-gradient(to left, #4c3991, #2f2359);
 }
 
-.background-image {
+header > section {
   background-image: url(../img/header.png);
   background-position: right;
   background-repeat: no-repeat;
@@ -130,11 +130,11 @@ nav a:last-of-type {
   margin-top: 20px;
 }
 
-.part-1-p {
+.part-1-explications > p {
   margin-top: 59px;
 }
 
-.part-1-articles {
+.part-1-explications > section {
   width: 60vw;
   height: 60vh;
   display: -webkit-box;
@@ -197,7 +197,7 @@ nav a:last-of-type {
   margin-top: 110px;
 }
 
-.paris-section {
+.part-3-paris div section {
   margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,23 +207,11 @@ nav a:last-of-type {
           justify-content: center;
 }
 
-.paris-txt {
+.part-3-paris div section article:first-of-type {
   margin-right: 148px;
 }
 
-.paris-txt h3::after {
-  content: "Nouveau !";
-  margin-left: 56px;
-  padding: 2px 18px;
-  background-color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16.5px;
-  font-weight: 600;
-  color: #2f2359;
-  border-radius: 30px;
-}
-
-.paris-list {
+.part-3-paris div section article:last-of-type {
   padding-top: 50px;
 }
 
@@ -240,7 +228,7 @@ nav a:last-of-type {
   width: 50%;
 }
 
-.part-4-bg {
+.part-4-temoignage div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -282,7 +270,7 @@ footer section {
   width: 100%;
 }
 
-.footer-social-network {
+footer div:last-of-type {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +309,7 @@ footer section {
   nav a:last-of-type {
     margin: 20px 0 0 0;
   }
-  .background-image {
+  header > section {
     background-image: none;
   }
   .down-arrow {
@@ -333,7 +321,7 @@ footer section {
   .part-1-explications .button-pink {
     margin-top: 50px;
   }
-  .part-1-articles {
+  .part-1-explications > section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -352,14 +340,14 @@ footer section {
     margin: 40px 0 60px 0;
     text-align: center;
   }
-  .paris-section {
+  .part-3-paris div section {
     display: block;
     margin-top: 50px;
   }
-  .paris-section .paris-txt {
+  .part-3-paris div section article:first-of-type {
     margin: unset;
   }
-  .paris-section .paris-list {
+  .part-3-paris div section article:last-of-type {
     margin: 0 auto;
   }
   .part-4-temoignage {
@@ -367,9 +355,10 @@ footer section {
   }
   .part-4-temoignage img, .part-4-temoignage .part-4-bg {
     width: 100%;
+    display: block;
   }
-  .part-4-bg {
-    padding: 40px 10%;
+  .part-4-temoignage div {
+    padding: 60px 10%;
   }
   footer {
     height: auto;
@@ -414,7 +403,7 @@ footer section {
     position: initial;
     top: unset;
   }
-  .part-1-articles {
+  .part-1-explications > section {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -426,11 +415,11 @@ footer section {
   .part-3-paris div {
     margin: 0 20px;
   }
-  .paris-section {
+  .part-3-paris div section {
     display: block;
     margin-top: 50px;
   }
-  .paris-section .paris-txt {
+  .part-3-paris div section article:first-of-type {
     margin: unset;
   }
 }
@@ -596,6 +585,18 @@ footer section {
   font-size: 21px;
   font-weight: 600;
   color: white;
+}
+
+.paris-txt h3::after {
+  content: "Nouveau !";
+  margin-left: 56px;
+  padding: 2px 18px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #2f2359;
+  border-radius: 30px;
 }
 
 .paris-txt p {
