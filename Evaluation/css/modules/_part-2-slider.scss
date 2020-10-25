@@ -1,0 +1,51 @@
+.part-2-slider {
+    height: 196px;
+    width: 478px;
+    border-radius: 10px;
+    box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    span {
+        @include police(white, 12px, 500);
+        background-color: $lightviolet;
+        padding: 4px 15px;
+        border-radius: 12px;
+        
+        &:first-child {
+            margin-right: 5px;
+        }
+    }
+
+    & > div {
+        width: 283px;
+        margin: 8% 0 0 0;
+    }
+
+    h5 {
+        margin-top: 5px;
+    }
+
+    h5 + p {
+        @include police($black, 16px, 500);
+    }
+
+    p + div {
+        display: flex;
+
+        img:first-child {
+            margin-left: -12px;
+        }
+
+        .last-img {
+            margin-left: -43px;
+        }
+
+        p {
+            @include police(#747474, 16px, 300);
+            padding-top: 10px;
+        }
+    }
+}

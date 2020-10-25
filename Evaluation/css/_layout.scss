@@ -79,6 +79,20 @@ nav {
 .part-2-incoming {
     min-height: 550px;
     margin: 0 112px;
+
+    section {
+        display: flex;
+        margin-top: 50px;
+        
+        &>article {
+            margin-right: 49px;
+        }
+    }
+
+    &>div {
+        justify-content: center;
+        margin-top: 65px;
+    }
 }
 
 // SECTION 3 : "Envie de créer des paris personnalisés ?"
@@ -145,8 +159,6 @@ nav {
 .part-4-temoignage div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 111px 0 104px;
 }
 
 // FOOTER
@@ -224,6 +236,7 @@ footer div:last-of-type {
     .part-1-explications {
         h2 {
             text-align: center;
+            //margin: 0 20px;
         }
 
         .button-pink {
@@ -239,6 +252,19 @@ footer div:last-of-type {
     // Section 2
     .part-2-incoming {
         margin: 0 40px;
+
+        section {
+            display: block;
+            margin: 5% auto;
+
+            &>article {
+                margin-right: unset;
+            }
+        }
+
+        &>div {
+            margin: 40px auto;
+        }
     }
 
     // Section 3
@@ -278,6 +304,9 @@ footer div:last-of-type {
         }
 
         div {
+            display: flex;
+            justify-content: center;
+            margin: unset;
             padding: 60px 10%;
         }
     }

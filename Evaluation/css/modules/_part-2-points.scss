@@ -1,0 +1,16 @@
+.part-2-points {
+    display: flex;
+    cursor: pointer;
+
+    div {
+        margin: 0 5px;
+        width: 19px;
+        height: 18px;
+        border-radius: 20px;
+        background-color: #818181;
+    }
+
+    div:first-of-type {
+        background-color: $pink;
+    }
+}

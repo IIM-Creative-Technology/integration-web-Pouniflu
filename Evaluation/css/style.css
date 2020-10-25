@@ -34,6 +34,13 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20.5px;
+  font-weight: 600;
+  color: #222222;
+}
+
 hr {
   width: 248px;
   height: 2px;
@@ -156,6 +163,24 @@ nav a:last-of-type {
   margin: 0 112px;
 }
 
+.part-2-incoming section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.part-2-incoming section > article {
+  margin-right: 49px;
+}
+
+.part-2-incoming > div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
 .part-3-paris, .part-3-paris div {
   min-height: 823px;
 }
@@ -236,10 +261,6 @@ nav a:last-of-type {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 111px 0 104px;
 }
 
 footer {
@@ -330,6 +351,16 @@ footer div:last-of-type {
   .part-2-incoming {
     margin: 0 40px;
   }
+  .part-2-incoming section {
+    display: block;
+    margin: 5% auto;
+  }
+  .part-2-incoming section > article {
+    margin-right: unset;
+  }
+  .part-2-incoming > div {
+    margin: 40px auto;
+  }
   .part-3-paris div {
     margin: 0 40px;
   }
@@ -358,6 +389,13 @@ footer div:last-of-type {
     display: block;
   }
   .part-4-temoignage div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: unset;
     padding: 60px 10%;
   }
   footer {
@@ -662,6 +700,13 @@ footer div:last-of-type {
   text-align: center;
 }
 
+.part-4-bg {
+  background-image: url(../img/quote.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: auto 300px auto 350px;
+}
+
 .part-4-bg p:first-of-type {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
@@ -732,5 +777,96 @@ footer div:last-of-type {
 
 .footer-social-network img {
   margin-left: 7px;
+}
+
+.part-2-slider {
+  height: 196px;
+  width: 478px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+          box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.part-2-slider span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  background-color: #d3c4f2;
+  padding: 4px 15px;
+  border-radius: 12px;
+}
+
+.part-2-slider span:first-child {
+  margin-right: 5px;
+}
+
+.part-2-slider > div {
+  width: 283px;
+  margin: 8% 0 0 0;
+}
+
+.part-2-slider h5 {
+  margin-top: 5px;
+}
+
+.part-2-slider h5 + p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.part-2-slider p + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.part-2-slider p + div img:first-child {
+  margin-left: -12px;
+}
+
+.part-2-slider p + div .last-img {
+  margin-left: -43px;
+}
+
+.part-2-slider p + div p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #747474;
+  padding-top: 10px;
+}
+
+.part-2-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.part-2-points div {
+  margin: 0 5px;
+  width: 19px;
+  height: 18px;
+  border-radius: 20px;
+  background-color: #818181;
+}
+
+.part-2-points div:first-of-type {
+  background-color: #bf3676;
 }
 /*# sourceMappingURL=style.css.map */
